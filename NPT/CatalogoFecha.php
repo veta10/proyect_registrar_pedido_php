@@ -41,7 +41,7 @@ function Footer()
     $this->Cell(0,10,'Pagina '.$this->PageNo().'/{nb}',0,0,'C');
 }
 }
-  $mysqli = new mysqli('localhost', 'root', '12345', 'BDNeptuno');
+  $mysqli = new mysqli("containers-us-west-86.railway.app", "root", "9gxJ9ftY9Zk3AKM7S7Cm", "bdneptuno",7510);
   $Consulta="Select * from Producto order by IdCategoria";
   $Resultado=$mysqli->query($Consulta);
   $pdf=new PDF();    

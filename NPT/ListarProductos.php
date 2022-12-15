@@ -7,7 +7,7 @@
 </head>
 <?php session_start();
 // Verificamos la conexión con el servidor y la base de datos
-  $mysqli = new mysqli('localhost', 'root', '12345', 'BDNeptuno');
+  $mysqli = new mysqli("containers-us-west-86.railway.app", "root", "9gxJ9ftY9Zk3AKM7S7Cm", "bdneptuno",7510);
   if(!isset($_SESSION['Id'])){
      $_SESSION['Id']=array(); 
      $_SESSION['Producto']=array();

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<?php
-  $mysqli = new mysqli('localhost', 'root', '12345', 'BDNeptuno');
+<?php 
+  $mysqli = new mysqli("containers-us-west-86.railway.app", "root", "9gxJ9ftY9Zk3AKM7S7Cm", "bdneptuno",7510);
   if (mysqli_connect_errno()) {
       echo 'Falló la conexión:'.$mysqli->connect_error;
       exit();
@@ -26,7 +26,7 @@
                 ?>
             </thead>
         <?php
-          $Consulta = $mysqli -> query ("SELECT * FROM CATEGORIA");
+          $Consulta = $mysqli -> query ("SELECT * FROM categoria");
                    
           $C=0;
           while ($Tabla = mysqli_fetch_array($Consulta)) {

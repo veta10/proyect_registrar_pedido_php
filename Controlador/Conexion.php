@@ -3,12 +3,12 @@
 class BaseDatos {
     public static function Conectar()
     {
-        $contraseña = "12345";
+        $contraseña = "9gxJ9ftY9Zk3AKM7S7Cm";
         $usuario = "root";
-        $BD = "BDNeptuno";
+        $BD = "bdneptuno";
         $Conex=NULL;
         try{
-            $Conex = new PDO('mysql:host=localhost;dbname=' . $BD, $usuario, $contraseña);
+            $Conex = new PDO('mysql:host=containers-us-west-86.railway.app;dbname=' . $BD, $usuario, $contraseña);
             //echo 'Conexion Realizada';
             }
         catch(Exception $e){

@@ -1,6 +1,6 @@
 <?php
 require('fpdf/fpdf.php');
-$mysqli = new mysqli('localhost', 'root', '12345', 'BDNeptuno');
+$mysqli = new mysqli("containers-us-west-86.railway.app", "root", "9gxJ9ftY9Zk3AKM7S7Cm", "bdneptuno",7510);
 class PDF extends FPDF
 {
 // Cabecera de página

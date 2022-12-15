@@ -191,7 +191,7 @@ class DetallePedido{
 }
 class ProcPedido{
   public function insertPedido(Pedido $pedido){
-      $con= mysqli_connect("localhost", "root", "12345", "BDNeptuno");
+      $con= mysqli_connect("containers-us-west-86.railway.app", "root", "9gxJ9ftY9Zk3AKM7S7Cm", "bdneptuno");
       if($con->connect_errno)echo 'Error de conexion';
       else{
         $IdPedido=$pedido->getIdPedido();
@@ -232,7 +232,7 @@ class ProcPedido{
       }
     }
     public function insertDetalle(DetallePedido $detalle){
-      $con= mysqli_connect("localhost", "root", "", "BDNeptuno");
+      $con=  mysqli_connect("containers-us-west-86.railway.app", "root", "9gxJ9ftY9Zk3AKM7S7Cm", "bdneptuno",7510);
       if($con->connect_errno)echo 'Error de conexion';
       else{
           $IdPedido=$detalle->getIdPedido();
@@ -250,7 +250,7 @@ class ProcPedido{
       }   
     }
   public function getMaxIdPedido(){
-        $con=mysqli_connect("localhost","root","12345","BDNeptuno");
+        $con= mysqli_connect("containers-us-west-86.railway.app", "root", "9gxJ9ftY9Zk3AKM7S7Cm", "bdneptuno",7510);
         $consulta="select Max(IdPedido) As Maximo from Pedido";
         $resultado=$con->query($consulta);
         $Reg = mysqli_fetch_array($resultado);

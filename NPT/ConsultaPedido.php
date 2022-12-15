@@ -19,7 +19,7 @@ and open the template in the editor.
         <?php
         if(isset($_POST["btnBuscar"])){
           $IdPedido=$_POST["txtNroPedido"];
-          $mysqli = new mysqli('localhost', 'root', '12345', 'BDNeptuno');
+          $mysqli = new mysqli("containers-us-west-86.railway.app", "root", "9gxJ9ftY9Zk3AKM7S7Cm", "bdneptuno",7510);
           //Datos del pedido
           $query = $mysqli -> query ("SELECT * FROM VistaPedido Where IdPedido=".$IdPedido);
               echo '<table border="1" width="75%">';
